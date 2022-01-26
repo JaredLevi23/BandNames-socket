@@ -18,7 +18,8 @@ class SocketService with ChangeNotifier {
   }
 
   void _initConfig() {
-    String urlSocket = 'http://192.168.100.5:3000'; //tu ipv4 con iPconfig (windows)
+    String urlSocket = 'https://flutter-socket.herokuapp.com/'; //tu ipv4 con iPconfig (windows)
+    //String urlSocket = 'http://192.168.100.5:3000'; //tu ipv4 con iPconfig (windows)
  
     _socket = IO.io(
         urlSocket,
